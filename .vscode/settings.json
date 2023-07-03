@@ -1,0 +1,8 @@
+{
+	"files.exclude": {
+		"node_modules": true,
+		"LICENSE": true,
+		"pnpm-lock.yaml": true
+	},
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
