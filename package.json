@@ -1,7 +1,7 @@
 {
 	"name": "bleb",
 	"version": "0.0.0",
-	"description": "remember to update urls in this file",
+	"description": "Better LEB128",
 	"scripts": {
 		"lint": "eslint .; tsc; tsc --project src",
 		"build": "rollup --config",
@@ -56,5 +56,13 @@
 		".": "./index.js",
 		"./*": "./*.js",
 		"./*.js": "./*.js"
-	}
+	},
+	"keywords": [
+		"serialization",
+		"deserialization",
+		"integer",
+		"bigint",
+		"leb128",
+		"bleb"
+	]
 }
