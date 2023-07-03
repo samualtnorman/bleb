@@ -1,5 +1,5 @@
 {
-	"name": "typescript-project",
+	"name": "bleb",
 	"version": "0.0.0",
 	"description": "remember to update urls in this file",
 	"scripts": {
@@ -12,16 +12,16 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/samualtnorman/typescript-project"
+		"url": "https://github.com/samualtnorman/bleb"
 	},
 	"author": "Samual Norman",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/samualtnorman/typescript-project/issues"
+		"url": "https://github.com/samualtnorman/bleb/issues"
 	},
-	"homepage": "https://github.com/samualtnorman/typescript-project#readme",
+	"homepage": "https://github.com/samualtnorman/bleb#readme",
 	"dependencies": {
-		"@samual/lib": "0.9.0-124f209"
+		"@samual/lib": "0.8.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.22.5",
