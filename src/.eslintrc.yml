@@ -1,6 +1,4 @@
-extends: [ ../.eslintrc.yml ]
+extends: "@samual/eslint-config/typescript.yml"
 
 rules:
-  "@typescript-eslint/no-namespace": [ warn, allowDeclarations: true ]
-  "@typescript-eslint/quotes": [ warn, backtick ]
-  "@typescript-eslint/consistent-type-imports": [ warn, prefer: type-imports ]
+  unicorn/numeric-separators-style: [ warn, hexadecimal: { groupLength: 4 } ]
