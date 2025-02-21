@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "rollup --config",
 		"dev": "pnpm build --watch",
-		"emit-declarations": "tsc --project src --declaration --emitDeclarationOnly --noEmit false --outDir dist",
+		"emit-declarations": "tsc --project src --noEmit false",
 		"package": "rm -rf dist && pnpm build && pnpm emit-declarations && scripts/build-package-json.js && cp LICENSE README.md dist && if [ -d dist/bin ]; then chmod +x dist/bin/*; fi",
 		"update": "pnpm update --latest !@types/node && pnpm update @types/node"
 	},

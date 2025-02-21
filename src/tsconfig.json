@@ -6,7 +6,10 @@
 		"useUnknownInCatchVariables": true,
 		"strictNullChecks": true,
 		"paths": { "/": [ "." ], "/*": [ "./*" ] },
-		"types": [ "babel-plugin-here/env" ]
+		"types": [ "babel-plugin-here/env" ],
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"outDir": "../dist"
 	},
 	"extends": "..",
 	"include": [ "**/*" ]
