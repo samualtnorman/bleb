@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@samual/lib':
-        specifier: 0.9.1
-        version: 0.9.1
+        specifier: ^0.13.0
+        version: 0.13.0
     devDependencies:
       '@samual/rollup-config':
         specifier: 0.1.3-858c2de
@@ -22,13 +22,13 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       rollup:
-        specifier: ^4.9.5
+        specifier: ^4.34.8
         version: 4.34.8
       semver:
-        specifier: ^7.5.4
+        specifier: ^7.7.1
         version: 7.7.1
       typescript:
-        specifier: ^5.3.3
+        specifier: ^5.7.3
         version: 5.7.3
 
 packages:
@@ -715,10 +715,6 @@ packages:
     resolution: {integrity: sha512-5uUTQaWsuK0110a0voLpiHn4S+fkGd9s2EkKFg6JGfAP8m9UFmMf55wqw5ycypjhHqLgn6sdZDSKCyeQeVEbdA==}
     engines: {node: ^18.20 || ^20.10 || >=22}
 
-  '@samual/lib@0.9.1':
-    resolution: {integrity: sha512-Sotk9j4UtJH0nchK9qIxYShZUu6LKl7mKl+F39aY8hba0EbSQ7dJ17m2vBGAcz5K5aodHJ1E72+6L8e405LMqQ==}
-    engines: {node: '>=20'}
-
   '@samual/rollup-config@0.1.3-858c2de':
     resolution: {integrity: sha512-QwMk8abk5Zx29fM92CdK7/4YU/25+lDAe6EZuInFwn8kKVMINDW+LyI5GfsWlsAEXGXWUzazSyafM9f3aXkulw==}
     engines: {node: ^18.20 || ^20.10 || >=22}
@@ -1011,9 +1007,6 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
-
-  valibot@0.25.0:
-    resolution: {integrity: sha512-cmD0ca15oyAbT75iYLNW6uU6doAeIwYfOshpXka/E1Bx4frzbkrgb7gvkI7K0YK/DVOksei4FfxWfRoBP3NFTg==}
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
@@ -1819,10 +1812,6 @@ snapshots:
 
   '@samual/lib@0.13.0': {}
 
-  '@samual/lib@0.9.1':
-    optionalDependencies:
-      valibot: 0.25.0
-
   '@samual/rollup-config@0.1.3-858c2de(@babel/core@7.26.9)(prettier@3.5.1)(rollup@4.34.8)':
     dependencies:
       '@babel/preset-env': 7.26.9(@babel/core@7.26.9)
@@ -2106,8 +2095,5 @@ snapshots:
       browserslist: 4.24.4
       escalade: 3.2.0
       picocolors: 1.1.1
-
-  valibot@0.25.0:
-    optional: true
 
   yallist@3.1.1: {}
