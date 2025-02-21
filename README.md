@@ -1,8 +1,6 @@
 # Better LEB128
 bleb
 
-[![Lint](https://github.com/samualtnorman/bleb/actions/workflows/lint.yml/badge.svg)](https://github.com/samualtnorman/bleb/actions/workflows/lint.yml) [![Publish](https://github.com/samualtnorman/bleb/actions/workflows/publish.yml/badge.svg)](https://github.com/samualtnorman/bleb/actions/workflows/publish.yml)
-
 | Range             | bleb    | LEB128  |
 |-------------------|---------|---------|
 | 0 - 127           | 1 byte  | 1 byte  |
