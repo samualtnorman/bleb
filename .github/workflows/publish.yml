@@ -13,6 +13,7 @@ jobs:
     - run: git config --global user.email github-action@users.noreply.github.com
     - run: git config --global user.name "Github Action"
     - run: pnpm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
+    - run: echo $PWD/node_modules/.bin:$PATH > $GITHUB_PATH
 
     - name: Publish dev
       if: github.event_name == 'push'
