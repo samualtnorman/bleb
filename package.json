@@ -10,10 +10,7 @@
 		"package": "rm -rf dist && pnpm build && pnpm emit-declarations && scripts/build-package-json.js && cp LICENSE README.md dist && if [ -d dist/bin ]; then chmod +x dist/bin/*; fi",
 		"update": "pnpm update --latest !@types/node && pnpm update @types/node"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/samualtnorman/bleb"
-	},
+	"repository": "github:samualtnorman/bleb",
 	"author": "Samual Norman",
 	"license": "MIT",
 	"bugs": {
