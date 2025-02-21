@@ -37,7 +37,8 @@
 	"private": true,
 	"type": "module",
 	"engine": {
-		"node": ">=20"
+		"node": ">=20",
+		"pnpm": "^10"
 	},
 	"exports": {
 		".": "./index.js",
