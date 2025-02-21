@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"@samual/rollup-config": "0.1.3-858c2de",
-		"@types/node": "^20.11.0",
+		"@types/node": "~18.19.76",
 		"babel-plugin-here": "^1.0.2",
 		"rollup": "^4.9.5",
 		"semver": "^7.5.4",
