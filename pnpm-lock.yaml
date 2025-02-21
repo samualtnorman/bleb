@@ -31,8 +31,8 @@ importers:
         specifier: ^20.11.0
         version: 20.17.19
       babel-plugin-here:
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^1.0.2
+        version: 1.0.2
       rollup:
         specifier: ^4.9.5
         version: 4.34.8
@@ -714,6 +714,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@samual/lib@0.13.0':
+    resolution: {integrity: sha512-5uUTQaWsuK0110a0voLpiHn4S+fkGd9s2EkKFg6JGfAP8m9UFmMf55wqw5ycypjhHqLgn6sdZDSKCyeQeVEbdA==}
+    engines: {node: ^18.20 || ^20.10 || >=22}
+
   '@samual/lib@0.9.1':
     resolution: {integrity: sha512-Sotk9j4UtJH0nchK9qIxYShZUu6LKl7mKl+F39aY8hba0EbSQ7dJ17m2vBGAcz5K5aodHJ1E72+6L8e405LMqQ==}
     engines: {node: '>=20'}
@@ -732,9 +736,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  babel-plugin-here@0.0.1:
-    resolution: {integrity: sha512-7pDq338T+Jr0Ogc+lPOFYYax0dBWMna9cvRLQNPm0mATGYwNcAfXyCnRZlAlsBgFgzSvkCJHGFT8PUn6hBmwYg==}
-    engines: {node: '>=16'}
+  babel-plugin-here@1.0.2:
+    resolution: {integrity: sha512-t45FblS+jfHZ8HM8mHAloUUgQfzoyqMtExNIJH+7zyDytMfu/CP9IOCnRQeem1C3tBeEUq6uU2aOmNXYS293bA==}
 
   babel-plugin-polyfill-corejs2@0.4.12:
     resolution: {integrity: sha512-CPWT6BwvhrTO2d8QVorhTCQw9Y43zOu7G9HigcfxvepOU6b8o3tcWad6oVgZIsZCTt42FFv97aA7ZJsbM4+8og==}
@@ -1765,6 +1768,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.8':
     optional: true
 
+  '@samual/lib@0.13.0': {}
+
   '@samual/lib@0.9.1':
     optionalDependencies:
       valibot: 0.25.0
@@ -1779,9 +1784,10 @@ snapshots:
 
   acorn@8.14.0: {}
 
-  babel-plugin-here@0.0.1:
+  babel-plugin-here@1.0.2:
     dependencies:
       '@babel/types': 7.26.9
+      '@samual/lib': 0.13.0
 
   babel-plugin-polyfill-corejs2@0.4.12(@babel/core@7.26.9):
     dependencies:
