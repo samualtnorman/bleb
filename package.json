@@ -3,11 +3,8 @@
 	"version": "0.0.0",
 	"description": "Better LEB128",
 	"scripts": {
-		"build": "rollup --config",
-		"dev": "pnpm build --watch",
 		"emit-declarations": "tsc --project src --noEmit false",
-		"package": "rm -rf dist && pnpm build && pnpm emit-declarations && scripts/build-package-json.js && cp LICENSE README.md dist && if [ -d dist/bin ]; then chmod +x dist/bin/*; fi",
-		"update": "pnpm update --latest !@types/node && pnpm update @types/node"
+		"package": "rm -rf dist && pnpm build && pnpm emit-declarations && scripts/build-package-json.js && cp LICENSE README.md dist && if [ -d dist/bin ]; then chmod +x dist/bin/*; fi"
 	},
 	"repository": "github:samualtnorman/bleb",
 	"author": "Samual Norman",
