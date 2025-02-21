@@ -33,7 +33,7 @@
 	},
 	"private": true,
 	"type": "module",
-	"engine": {
+	"engines": {
 		"node": "^18.20 || ^20.10 || >=22",
 		"pnpm": "^10"
 	},
