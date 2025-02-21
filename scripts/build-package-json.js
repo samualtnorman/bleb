@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { writeFileSync, mkdirSync as makeDirectorySync, readdirSync as readDirectorySync } from "fs"
-import packageConfig from "../package.json" assert { type: "json" }
+import packageConfig from "../package.json" with { type: "json" }
 
 delete packageConfig.private
 delete packageConfig.scripts

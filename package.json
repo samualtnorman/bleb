@@ -34,7 +34,7 @@
 	"private": true,
 	"type": "module",
 	"engine": {
-		"node": ">=20",
+		"node": "^18.20 || ^20.10 || >=22",
 		"pnpm": "^10"
 	},
 	"exports": {
