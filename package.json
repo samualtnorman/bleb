@@ -1,6 +1,6 @@
 {
 	"name": "bleb",
-	"version": "0.0.0",
+	"version": "0.0.2",
 	"description": "Better LEB128",
 	"repository": "github:samualtnorman/bleb",
 	"author": "Samual Norman",
