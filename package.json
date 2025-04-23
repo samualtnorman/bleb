@@ -32,8 +32,14 @@
 		"./*.js": "./*.js"
 	},
 	"keywords": [
+		"encoding",
 		"serialization",
+		"encoder",
+		"decoder",
+		"decoding",
 		"deserialization",
+		"encode",
+		"decode",
 		"integer",
 		"bigint",
 		"leb128",
