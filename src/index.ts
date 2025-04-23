@@ -3,7 +3,7 @@ import { assert } from "@samual/lib/assert"
 export function fromBigInt(integer: bigint): number[] {
 	const result: number[] = []
 
-	while (integer >= 0) {
+	while (integer >= 0n) {
 		let value = Number(integer & 0x7Fn)
 
 		integer >>= 7n
