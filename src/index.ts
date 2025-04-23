@@ -17,7 +17,6 @@ export function fromBigInt(integer: bigint): number[] {
 	return result
 }
 
-// eslint-disable-next-line unicorn/no-object-as-default-parameter
 export function toBigInt(data: Record<number, number>, index: { $: number } = { $: 0 }): bigint {
 	let result = 0n
 	let offset = 0n
