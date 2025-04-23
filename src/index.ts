@@ -1,5 +1,13 @@
 import { assert } from "@samual/lib/assert"
 
+/**
+ * @example Basic Usage
+ * ```ts
+ * import * as Bleb from "bleb"
+ *
+ * console.log(Bleb.fromBigInt(1000n)) // [ 232, 6 ]
+ * ```
+ */
 export function fromBigInt(integer: bigint): number[] {
 	const result: number[] = []
 
@@ -9,6 +17,26 @@ export function fromBigInt(integer: bigint): number[] {
 		integer >>= 7n
 
 		if (integer--)
+/**
+ * @example Basic Usage
+ * ```ts
+ * import * as Bleb from "bleb"
+ *
+ * console.log(Bleb.toBigInt([ 232, 6 ])) // 1000n
+ * ```
+ *
+ * @example Less-Basic Usage
+ * ```ts
+ * import * as Bleb from "bleb"
+ *
+ * // some data with bleb at byte offset 2
+ * const u8View = new Uint8Array([ 177, 218, 232, 6, 197, 165, 75, 177 ])
+ * const index = { $: 2 }
+ *
+ * console.log(Bleb.toBigInt(u8View, index)) // 1000n
+ * console.log(index) // { $: 4 }
+ * ```
+ */
 			value |= 0x80
 
 		result.push(value)
