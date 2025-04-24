@@ -17,6 +17,14 @@ export function fromBigInt(integer: bigint): number[] {
 		integer >>= 7n
 
 		if (integer--)
+			value |= 0x80
+
+		result.push(value)
+	}
+
+	return result
+}
+
 /**
  * @example Basic Usage
  * ```ts
@@ -37,14 +45,6 @@ export function fromBigInt(integer: bigint): number[] {
  * console.log(index) // { $: 4 }
  * ```
  */
-			value |= 0x80
-
-		result.push(value)
-	}
-
-	return result
-}
-
 export function toBigInt(data: Record<number, number>, index: { $: number } = { $: 0 }): bigint {
 	let result = 0n
 	let offset = 0n
