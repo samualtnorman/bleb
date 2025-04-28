@@ -60,3 +60,38 @@ export function toBigInt(data: Record<number, number>, index: { $: number } = { 
 			return result
 	}
 }
+
+export function fromNumber(integer: number): number[] {
+	const result: number[] = []
+
+	while (integer >= 0) {
+		let value = integer & 0x7F
+
+		// bitwise operators on numbers trim to 32 bits
+		// the following is like doing `integer >>= 7` without losing bits
+		integer = Math.floor(integer / 128)
+
+		if (integer--)
+			value |= 0x80
+
+		result.push(value)
+	}
+
+	return result
+}
+
+export function toNumber(data: Record<number, number>, index: { $: number } = { $: 0 }): number {
+	let result = 0
+	let offset = 0
+
+	while (true) {
+		const byte = data[index.$++]
+
+		assert(byte != undefined, HERE)
+		result += ((byte & 0x7F) + (offset && 1)) * (2 ** offset)
+		offset += 7
+
+		if (!(byte & 0x80))
+			return result
+	}
+}
